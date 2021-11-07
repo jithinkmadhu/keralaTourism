@@ -1,0 +1,27 @@
+/* #carouselExampleControls{
+    float: right;
+    height: 100px;
+} */
+
+.carousel-item img{
+    height: 300px;
+}
+
+.imgcol{
+    margin-top: 1.5em;
+}
+.imgcol img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.top5{
+    margin: 0pt;
+    padding: 0pt;
+}
+
+p{
+    text-indent: 2cm;
+}

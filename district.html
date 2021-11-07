@@ -1,0 +1,546 @@
+<!-- This is the disrict wise page -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- head section starts here -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title of the page -->
+    <title>District wise page</title>
+
+    <!-- this sript is used for carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+     <!-- linking external style sheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/districtstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <!-- head ends here -->
+
+  <!-- body starts here -->
+  <body style="background-color: rgb(143, 245, 143); background-image: url(Images/mountain.jpg); background-size: cover;">
+
+    <!-- top navigation bar -->
+    <div class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="Images/logo.png" alt="Kerala Tourism logo" height="60px" width="111px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="district.html">Districts</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Top nav bar ends here -->
+
+    <!-- second navbar content -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="kasaragod.html">Kasaragod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kannur.html">Kannur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wayanad.html">Wayanad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kozhikode.html">Kozhikode</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="malapuram.html">Malapuram</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="palakkad.html">Palakkad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="thrissur.html">Thrissur</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ernakulam.html">Ernakulam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="idukki.html">Idukki</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kottayam.html">Kottayam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alappuzha.html">Alappuzha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pathanamthitta.html">Pathanamthitta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kollam.html">Kollam</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="thiruvanathapuram.html">Thiruvananthapuram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- second navbar ends here -->
+
+    <br>
+    <h1> <u> Explore Kerala state wise </u> </h1>
+    <br>
+
+    <!-- 1st row of cards starts here -->
+    <div class="container">
+      <div class="row">
+
+        <!-- kasaragod card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/c9/7b/10/ranipuram-hills.jpg?w=500&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/03/57/ab/ananthapura-lake-temple.jpg?w=500&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/cc/4c/8b/bekal-view.jpg?w=500&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kasaragod</h5>
+              <p class="card-text">The northernmost district of Kerala, Kasaragod is famous for its handlooms and its 293 kilometre long coastline. With its cultural uniqueness, the place is known as the land of gods.</p>
+              <a href="kasaragod.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- kasaragod ends here -->
+
+        <!-- kannur card -->
+        <div class="col">
+          <div class="card">  
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/41/49/ca/come-explore.jpg?w=1000&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/35/eb/ef/rainy-season.jpg?w=1000&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4d/37/da/caption.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kannur</h5>
+              <p class="card-text">Northernmost districts of Kerala blessed with full of greenary and historious places.</p>
+              <br><br><br>
+              <a href="kannur.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- kannur ends here -->
+
+        <!-- wayanda card -->
+        <div class="col">
+          <div class="card">    
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/89/f3/67/entrance-path.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/da/1a/b8/chembra-peak.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/99/cf/ed/the-land-mark-of-wayanad.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Wayanad</h5>
+              <p class="card-text">Wayanad, the green paradise is nestled among the mountains of the Western Ghats, forming the border world of the greener part of Kerala.</p>
+              <br>
+              <a href="wayanad.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- wayanad ends here -->
+
+      </div>
+    </div>
+    <!-- 1st row of cards starts here -->
+
+    <br>
+
+    <!-- 2nd row of cards starts here -->
+    <div class="container">
+      <div class="row">
+
+        <!-- kozhikode card -->
+        <div class="col">
+          <div class="card">    
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d5/18/2b/psx-20170319-125048-largejpg.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/ee/5d/0c/img-20191105-090733-largejpg.jpg?w=1000&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/75/92/21/kariyathumpara.jpg?w=900&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kozhikode</h5>
+              <p class="card-text">
+                Kozhikode is situated in southern India between the Western Ghats and the Arabian Sea, Kozhikode has been attracting travelers from antiquity.</p>
+              <br>
+              <a href="kozhikode.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- kozhikode card ends here -->
+
+        <!-- malapuram card -->
+        <div class="col">
+          <div class="card">    
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/41/2a/39/cheruppadimala-mini-ootty.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/b1/54/65/teak-museum-nilambur.jpg?w=800&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/41/2c/88/kottakunnu-in-the-morning.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Malappuram</h5>
+              <p class="card-text">
+                Bounded by the Nilgiris hills on the East and the Arabian Sea on the west, the district of Malappuram literally the land atop the hills, is remarkable for its unique natural beauty. </p>
+              <br>
+              <a href="malapuram.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- malapuram card ends here -->
+
+        <!-- palakkad card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/cc/53/f4/getlstd-property-photo.jpg?w=600&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/09/54/be/img-20181007-113304-largejpg.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/4e/38/93/seethargundu-viewpoint.jpg?w=800&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Palakkad</h5>
+              <p class="card-text">Celebrated as the Granary of Kerala, Palakkad is a vast stretch of fertile plains interspersed with hills, rivers, mountain streams and forests.</p>
+              <br>
+              <a href="palakkad.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- palakkad card ends here -->
+
+      </div>
+    </div>
+    <!-- 2nd row of cards ends here -->
+  
+    <br>
+
+    <!-- 3rd row of cards starts here -->
+    <div class="container">
+      <div class="row">
+
+        <!-- thrissur card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/4b/a2/1c/athirapally-falls-in.jpg?w=800&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/1e/da/8d/photo0jpg.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/c6/19/cf/20160326-170555-largejpg.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Thrissur</h5>
+              <p class="card-text">The cultural capital of Kerala, the Poorams or temple festivals in Thrissur draw in thousands of people every single year as these carnivals encapsulate every single part of Kerala's rich heritage.</p>
+              <a href="thrissur.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- thrissur card ends here -->
+
+        <!-- ernakulam card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://images.thrillophilia.com/image/upload/s--77KaJztW--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/092/176/original/1589452218_w1_(1).jpg.jpg?1589452218" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.karmictourism.com/wp-content/uploads/2021/02/Hill-Palace-Museum-in-Tripunithura-Kochi.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/00/7e/9b/bhoothathankettu-dam.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ernakulam</h5>
+              <p class="card-text">Ernakulam, the urbane face of Kochi, is a bustling place with crowded shopping malls, restaurants and high-rises.</p>
+              <br><br>
+              <a href="ernakulam.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- ernakulam card ends here -->
+
+        <!-- idukki card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/d9/5f/05/idukki-dam.jpg?w=800&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/72/f1/7e/img-20190207-wa0022-largejpg.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/bd/1f/43/1522484668315-largejpg.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Idukki</h5>
+              <p class="card-text">With its hills covered in a blanket of mist, serene valleys, and acres of lush greenery, Idukki truly casts an enchanting spell on its visitors.</p>
+              <br>
+              <a href="idukki.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- idukki card ends here -->
+
+      </div>
+    </div>
+    <!-- 3rd row ends here -->
+    
+    <br>
+
+    <!-- 4th row of cards starts here -->
+    <div class="container">
+      <div class="row">
+
+        <!-- kottayam card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/05/0d/9e/scenic-paradise.jpg?w=1100&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.kumarakom.com/admin/userfiles/1499066033_about-kumarakom.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/19/ce/79/marmala-waterfall.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kottayam</h5>
+              <p class="card-text">The majestic Vembanad Lake and the stunning backwaters of Kumarakom are the prime attractions of Kottayam.</p>
+              <br><br>
+              <a href="kottayam.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- kottayam card ends here -->
+
+        <!-- alappuzha card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/3c/1b/51/docking-station-of-houseboat.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="http://mywordsnthoughts.com/myworld/wp-content/uploads/2017/12/Rice_fields_of_Kuttanad.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/f4/b0/b7/alappuzha-beach.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Alappuzha</h5>
+              <p class="card-text">A town with canals, backwaters, beaches, and lagoons, Alappuzha was described by George Curzon, Viceroy of India at the start of the 20th century, as the "Venice of the East."</p>
+              <a href="alappuzha.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- alappuzha card ends here -->
+
+        <!-- pathanamthitta card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/cc/c9/1e/ready-for-the-flag.jpg?w=1000&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/60/e8/00/sabarimala-sri-dharmasastha.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/17/fb/80/perunthenaruvi-waterfall.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Pathanamthitta</h5>
+              <p class="card-text">Pathanamthitta district is known as the Headquarters of Pilgrimage Tourism, of the Kerala State. Situated near the Western Ghats and bordered by the hills.</p>
+              <br>
+              <a href="pathanamthitta.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- pathanamthitta card ends here -->
+
+      </div>
+    </div>
+    <!-- 4th row ends here -->
+
+    <br>
+
+    <!-- 5th row of cards starts here -->
+    <div class="container">
+      <div class="row">
+
+        <!-- kollam card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/9c/f4/af/worlds-largest-bird-sculpture.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/be/73/88/img-20170911-wa0033-largejpg.jpg?w=1100&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/bb/0a/87/thirumullavaram-beach.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Kollam</h5>
+              <p class="card-text">Kollam, known for its must see pretty backwaters, green fields, tropical crops, lush forests and serene lakes and rivers is a destination not to be missed out.</p>
+              <br>
+              <a href="kollam.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- kollam card ends here -->
+
+        <!-- thiruvanathapuram card -->
+        <div class="col">
+          <div class="card">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/c4/ab/4b/shri-padmanabhaswamy.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://www.ekeralatourism.net/wp-content/uploads/2018/01/Kovalam-Beach.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/15/72/d0/thiruvananthapuram-zoo.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Thiruvananthapuram</h5>
+              <p class="card-text">Thiruvananthapuram is a major tourist centre, known for the Padmanabhaswamy Temple, the beaches of Kovalam and Varkala etc.</p>
+              <br>
+              <a href="thiruvanathapuram.html" class="btn btn-primary">Explore</a>
+            </div>
+          </div>
+        </div>
+        <!-- thiruvanathapuram card ends here -->
+
+        <!-- this div is for the last row, because it contains only two cards -->
+        <div class="col">
+        </div>
+      </div>
+    </div>
+    <!-- 5th row ends here -->
+
+    <!-- footer -->
+    <div>
+      <footer style="margin-top: 2em;">
+        <div>
+          <h5>Copyright © 2021 Kerala Tourism. All rights reserved</h5>
+        </div>
+      </footer>
+    </div>
+    <!-- footer ends here -->
+
+  </body>
+</html>
