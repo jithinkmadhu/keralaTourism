@@ -58,13 +58,15 @@
     <!-- signup contents -->
     <div class="form">
       <h3>Sign Up</h3>
-      <form action="#">
-        <input type="text" placeholder="First Name*" style="width: 40%;">
-        <input type="text" placeholder="Surname*" style="width: 40%;"> 
+      <form action="district.html" onsubmit="return emptyValidation() && phoneValidation() && emailValidation() && pswdType() && equalityOfPassword()">
+        <input type="text" placeholder="First Name*" style="width: 40%;" id="fname" required>
+        <input type="text" placeholder="Surname" style="width: 40%;"> 
         <br><br>
-        <input type="text" placeholder="Mobile Number*">
+        <input type="text" placeholder="Mobile Number*" id="phone" required>
+        <label for="errorPhone" id="phoneError"></label>
         <br><br>
-        <input type="text" placeholder="Email Address" name="email" id="email">
+        <input type="email" placeholder="Email Address*" name="email" id="email" required>
+        <label for="errorEmail" id="emailError"></label>
         <br><br>
         <select id="country" name="country" style="width: 80%; height: 30px;">
           <option value="Country">Country</option>
@@ -316,11 +318,14 @@
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
         <br><br>
-        <input type="password" placeholder="Password*">
+        <input name="password" type="password" placeholder="Password*" id="pswd1" onkeyup="return passwordChanged();" required>
+        <span id="strength"></span>
+        <label for="errorType" id="typeError"></label>
         <br><br>
-        <input type="password" placeholder="Re-type Password*">
+        <input type="password" placeholder="Re-type Password*" id="pswd2" required>
+        <label for="errorPswd" id="pswdError"></label>
         <br><br>
-        <input type="button" value="Sign Up" class="buttons">
+        <input type="submit" value="Sign Up" class="buttons" id="submit">
         <hr>
         Already have an account? <a href="login.html">Log in here</a>
       </form>
@@ -336,6 +341,9 @@
       </footer>
     </div>
     <!-- footer ends here -->
+
+    <!-- javascript -->
+    <script src="js/form.js" ></script>
 
   </body>
   <!-- body ends here -->
