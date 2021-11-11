@@ -59,17 +59,19 @@
     <div class="loginpage">
       <h2 id="loghead">Log In</h2><br>    
       <div class="login">    
-        <form id="login" action="#">    
-          <label for="Uname">Username/Email:</label>    
-          <input type="text" name="Uname" id="Uname" placeholder="Username/Email">
-          <label for="errorMessage" id="errorEmail"></label>    
+        <form id="login" action="district.html" onsubmit="return emptyValidation() && emailValidation() && pswdType()">    
+          <label for="email">Email:</label>    
+          <input type="text" name="email" id="email" placeholder="Username/Email" required>
+          <label for="errorEmail" id="emailError"></label>
           <br><br>
           <label for="Pass">Password:&nbsp;&nbsp;&nbsp;</label>    
-          <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+          <input name="Pass" type="password" placeholder="Password*" id="pswd1" onkeyup="return passwordStrength();" required>
+          <span id="strength"></span>
+          <label for="errorType" id="typeError"></label>    
           <br><br> 
           <input type="checkbox" id="check" style="text-align: left;">    
           <span style="text-align: left;">Remember me</span>   
-          <input type="button" name="log" class="buttons" id="log" value="Log In">       
+          <input type="submit" value="Login" class="buttons" id="submit">
           <br><br> 
           Forgot <a href="#" id="loga" >Password?</a> 
           <hr>
@@ -92,6 +94,10 @@
       </footer>
     </div>
     <!-- footer ends here -->
+
+    <!-- javascript -->
+    <script src="js/loginForm.js" ></script>
+
   </body>
   <!-- body ends here -->
 </html>
