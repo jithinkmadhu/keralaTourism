@@ -60,11 +60,11 @@
       <h2 id="loghead">Log In</h2><br>    
       <div class="login">    
         <form id="login" action="district.html" onsubmit="return emptyValidation() && emailValidation() && pswdType()">    
-          <label for="email">Email:</label>    
-          <input type="text" name="email" id="email" placeholder="Username/Email" required>
+          <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>    
+          <input type="email" placeholder="Email" name="email" id="email" required>
           <label for="errorEmail" id="emailError"></label>
           <br><br>
-          <label for="Pass">Password:&nbsp;&nbsp;&nbsp;</label>    
+          <label for="Pass">Password:</label>    
           <input name="Pass" type="password" placeholder="Password*" id="pswd1" onkeyup="return passwordStrength();" required>
           <span id="strength"></span>
           <label for="errorType" id="typeError"></label>    

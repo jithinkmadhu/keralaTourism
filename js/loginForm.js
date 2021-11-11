@@ -17,7 +17,7 @@ function emailValidation(){
         return true;
     }
     else{
-        emailError.innerHTML = "<br>Invalid Email !!!!!!!!";
+        emailError.innerHTML = "Invalid Email !!!!!!!!";
         emailError.style.color = "red";
         email.style.border = "red solid 1px";
         return false;
